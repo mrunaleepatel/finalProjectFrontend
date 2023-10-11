@@ -1,0 +1,73 @@
+.product-grid {
+  margin-top: -1rem;
+}
+.first-product-grid {
+  height: 10rem;
+}
+.second-product-grid {
+  height: 15rem;
+}
+.First-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1200px;
+  margin: 10px auto auto;
+}
+.box img {
+  width: 250px;
+}
+.box image:hover {
+  border: 2px solid rgb(35, 135, 239);
+}
+.box {
+  width: 260px;
+  min-height: 270px;
+  border: 1px solid rgb(9, 236, 236);
+  cursor: pointer;
+}
+.box:hover {
+  border: 2px solid rgb(81, 7, 155);
+}
+.box a {
+  text-decoration: none;
+  color: black;
+}
+.box h4 {
+  padding: 4px 0 0 20px;
+}
+.box p {
+  padding: 0 0 10px 20px;
+  color: aliceblue;
+  font-size: 14px;
+}
+.addres_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.addres_data p {
+  font-size: 11px;
+  margin-right: 10px;
+}
+#lode_more_products_id {
+  display: none;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+}
+.example-card {
+  border: 1px solid rgb(8, 236, 236);
+  margin-top: 12px;
+}
+.example-card:hover {
+  border: 2px solid rgb(81, 7, 155);
+}
+.content {
+  padding: 16px;
+  margin-top: 5px;
+  align-items: flex-start;
+  margin-left: 5px;
+}
