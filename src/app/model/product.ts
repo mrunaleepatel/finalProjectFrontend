@@ -1,4 +1,5 @@
 export class Product {
+
   pid?:number;
   pname?:string;
   pcategory?:string;
@@ -6,9 +7,11 @@ export class Product {
   description?:string;
   pcity?:string;
   pcoin?:number;
-  image:any;
+  image: any;
 
-  constructor(){
-  }
+  // image:[byte];
+
+
+  constructor(){}
 
 }

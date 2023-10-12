@@ -1,5 +1,5 @@
-import {Component, OnInit} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../service/product.service';
 import { Router } from '@angular/router';
 
@@ -14,16 +14,18 @@ export class LandingComponent implements OnInit {
 
   constructor(
     private httpClient: HttpClient,
-    private router: Router,
     private productService: ProductService,
-  ){}
+    private router: Router,
+
+  ) { }
 
   ngOnInit(): void {
     this.productService.getAllProduct().subscribe((data:any)=>{
-      console.log(data);
-      this.getproduct = data;
+      console.log(data)
+      this.getproduct=data;
     })
   }
+
   goToProduct(pid:any){
     this.router.navigate(["detail/" + pid]);
   }
