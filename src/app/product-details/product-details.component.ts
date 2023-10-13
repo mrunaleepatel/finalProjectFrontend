@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../service/product.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -19,7 +18,8 @@ export class ProductDetailsComponent implements OnInit {
   image:string="";
   pid = 2;
   public productdata: any;
-
+  isEditing!: boolean;
+  private router: any;
 
   constructor(
     private _productdetailsService: ProductService,
@@ -43,11 +43,23 @@ export class ProductDetailsComponent implements OnInit {
       this.description = this.productdata.description
       this.image=this.productdata.image
 
-
-
-
     })
   }
 
+  // Function to save the edited product.
 
+  saveProduct() {
+    this.isEditing = false;
+  }
+  editProduct() {
+    this.isEditing = true;
+  }
+  deleteProduct() {
+    if (confirm('Are you sure you want to delete this product?')) {
+      this.productService.deleteProduct(this.pid).subscribe(() => {
+        this.router.navigate(['/']);
+      });
+    }
+  }
 }
+

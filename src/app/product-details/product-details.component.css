@@ -37,6 +37,7 @@ p {
 
 mat-raised button {
   float: left;
+  background-color: #F24726;
 }
 
 /* .scroll-ele{
@@ -70,8 +71,6 @@ img {
   overflow-y: auto;
 }
 
-
-
 .preference {
   display: flex;
   align-items: center;
@@ -86,15 +85,12 @@ img {
 
 
 }
-
 .main-image{
 
   border-radius: 6px;
   object-fit: fill;
 
 }
-
-
 
 .lft-scroll-box {
   display: flex;
@@ -120,8 +116,6 @@ table {
   min-height:11rem;
   max-height:13px;
   overflow-y: auto;
-
-
 }
 
 @media screen and (min-width: 1250px) and (max-width: 1450px){
@@ -241,6 +235,42 @@ table {
     min-height: 6rem;
     max-height: 10rem;
     overflow-y: auto;
+  }
+
+  .edit-form {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .edit-form input,
+  .edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .edit-form button {
+    background-color: #F24726;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
   }
 
 }

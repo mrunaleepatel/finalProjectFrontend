@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterProductComponent } from './register-product/register-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
@@ -26,7 +27,6 @@ import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 import { LandingComponent } from './landing/landing.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
