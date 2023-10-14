@@ -105,7 +105,8 @@
 .mat-button,.mat-raised-button,.mat-icon-button,.mat-stroked-button,.mat-flat-button,.mat-fab,.mat-mini-fab {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
-  font-weight: 500
+  font-weight: 500;
+  background-color: brown;
 }
 
 .mat-button-toggle {
@@ -1232,7 +1233,8 @@ textarea.cdk-textarea-autosize-measuring-firefox {
 }
 
 .mat-raised-button:not([class*=mat-elevation-z]) {
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 1px 5px 0px rgba(0, 0, 0, 0.12)
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  
 }
 
 .mat-raised-button:not(.mat-button-disabled):active:not([class*=mat-elevation-z]) {

@@ -6,6 +6,7 @@
 h1 {
   font-size: 3rem;
   margin-top: 1rem;
+  font-family: Skia, sans-serif;
 }
 
 p {
@@ -97,11 +98,47 @@ table {
 
 .description-text-box {
   border:1px solid rgb(58, 10, 134);
-  margin-top: -9rem;
+  margin-top: -20rem;
   border-radius: 6px;
   min-height:11rem;
   max-height:13px;
   overflow-y: auto;
+}
+
+.edit-form {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-form button {
+  background-color: #F24726;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 1250px) and (max-width: 1450px){
@@ -168,11 +205,11 @@ table {
 }
 
 .coin-box {
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 8px;
   padding: 4px 4px 4px 4px;
   background: #D9EDFD;
-
+  font-family: Skia, sans-serif;
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px){
@@ -223,40 +260,6 @@ table {
     overflow-y: auto;
   }
 
-  .edit-form {
-    background-color: #f5f5f5;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
 
-  .edit-form input,
-  .edit-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .edit-form button {
-    background-color: #F24726;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .container {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-right: auto;
-    margin-left: auto;
-  }
 
 }
