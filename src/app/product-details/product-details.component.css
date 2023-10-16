@@ -9,8 +9,14 @@ h1 {
   font-family: Skia, sans-serif;
 }
 
+h3 {
+  font-family: Copperplate, serif;
+  font-size: 23px;
+  text-decoration: underline;
+}
 p {
   padding-left: 0.25rem;
+  padding-top: 10px;
 }
 
 .post-date {
@@ -18,13 +24,10 @@ p {
   justify-content: right;
 }
 
-
 .container {
-
   width: 15rem;
   margin-top: 10rem;
   margin-left: 5rem;
-
 }
 
 .material-icons-user {
@@ -69,14 +72,11 @@ img {
   background: #E7EEE7;
   overflow-x: auto;
   overflow-y: auto;
-
-
 }
-.main-image{
 
+.main-image{
   border-radius: 6px;
   object-fit: fill;
-
 }
 
 .lft-scroll-box {
@@ -93,11 +93,10 @@ table {
   align-items: center;
   margin-right: 1rem;
   margin-top: -1rem;
-
 }
 
 .description-text-box {
-  border:1px solid rgb(58, 10, 134);
+  border:1px solid darkolivegreen;
   margin-top: -20rem;
   border-radius: 6px;
   min-height:11rem;
@@ -105,8 +104,12 @@ table {
   overflow-y: auto;
 }
 
+label {
+  font-family: Charter, serif;
+}
+
 .edit-form {
-  background-color: #f5f5f5;
+  background-color: darkseagreen;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -120,10 +123,11 @@ table {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: Skia, sans-serif;
 }
 
 .edit-form button {
-  background-color: #F24726;
+  background-color: darkseagreen;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -143,7 +147,7 @@ table {
 
 @media screen and (min-width: 1250px) and (max-width: 1450px){
   .description-text-box {
-    border:1px solid rgb(58, 10, 134);
+    border:1px solid darkolivegreen;
     margin-top: 1rem;
     border-radius: 6px;
     min-height: 10rem;
@@ -188,28 +192,23 @@ table {
   }
 }
 
-
 .exchange-button {
   margin-top: 1rem;
 }
-
-
-.coin-box:hover {
-  border: 2px solid black;
-  border-radius: 8px;
-  padding: 4px 4px 4px 4px;
-  background: #D9EDFD;
-  box-shadow: 2px 2px 2px 2px #bee4ed;
-
-
-}
-
+/*.coin-box:hover {*/
+/*  border: 2px solid black;*/
+/*  border-radius: 8px;*/
+/*  padding: 4px 4px 4px 4px;*/
+/*  background: #D9EDFD;*/
+/*  box-shadow: 2px 2px 2px 2px #bee4ed;*/
+/*}*/
 .coin-box {
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 8px;
-  padding: 4px 4px 4px 4px;
+  padding: 5px 5px 5px 5px;
   background: #D9EDFD;
   font-family: Skia, sans-serif;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px){
@@ -259,7 +258,23 @@ table {
     max-height: 10rem;
     overflow-y: auto;
   }
+}
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .description-text-box {
+    border: 1px solid rgb(58, 10, 134);
+    margin-top: 1rem;
+    border-radius: 6px;
+    min-height: 6rem;
+    max-height: 9px;
+    overflow-y: auto;
+  }
 
-
-
+  .user-profile-box-review {
+    border: 1px solid black;
+    margin-top: 1rem;
+    border-radius: 3px;
+    min-height: 6rem;
+    max-height: 10rem;
+    overflow-y: auto;
+  }
 }

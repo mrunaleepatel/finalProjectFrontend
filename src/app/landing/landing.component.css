@@ -1,3 +1,4 @@
+
 .product-grid {
   margin-top: -1rem;
 }
@@ -59,11 +60,11 @@
   font-family: Avenir, sans-serif;
 }
 .example-card {
-  border: 1px solid rgb(8, 236, 236);
+  border: 1px solid rgb(17, 6, 6);
   margin-top: 12px;
 }
 .example-card:hover {
-  border: 2px solid rgb(81, 7, 155);
+  border: 2px solid rgb(167, 207, 234);
 }
 .content {
   padding: 16px;

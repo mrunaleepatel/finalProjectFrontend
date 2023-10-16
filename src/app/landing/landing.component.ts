@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../service/product.service';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
