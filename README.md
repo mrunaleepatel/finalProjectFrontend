@@ -1,4 +1,40 @@
-# Frontendecommerce
+## Project Name: BudgetBazaar
+
+### Description:
+BudgetBazaar is an online e-commerce platform that specializes in offering a wide range of affordable products and goods to budget-conscious shoppers.
+
+### Technologies Used:
+* Angular
+* CSS
+* HTML
+* JavaScript
+* Bootstrap
+
+### Links:
+* [Backend Repo]()
+* [Frontend Repo]()
+* [Deployed App]()
+
+### Features:
+* Show a list of products
+* Add products
+* Edit products
+* Delete products
+
+### IDE Used:
+- Visual Studio Code
+
+### Learning tool:
+I used (https://spring.academy and https://www.baeldung.com) courses to learn Spring Boot, Spring Security, Spring Data JPA, MySQL and for Angular I used (https://angular-university.io/home).
+
+### Mockups:
+* [Desktop View]()
+
+### Screenshots:
+* [Homepage]()
+* [Product Details]()
+* [Register Product]()
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
