@@ -9,7 +9,7 @@ import {error} from "@angular/compiler-cli/src/transformers/util";
 })
 export class ProductService {
 
-  baseUrl = "http://localhost:8080"
+  baseUrl = "http://spring-budgetbazaar-env.eba-k2c9g4qc.us-east-2.elasticbeanstalk.com/"
 
   constructor(private httpClient: HttpClient) { }
 
