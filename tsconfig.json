@@ -23,8 +23,6 @@
       "ES2022",
       "dom"
     ],
-    "types": ["@types/file-api",
-    "jest"],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
