@@ -76,7 +76,6 @@ export class RegisterProductComponent implements OnInit {
       this.productObj.pcity = this.productForm.value.pcity;
       this.productObj.pcoin = this.productForm.value.pcoin;
       this.productObj.image = this.base64code;
-
       this.productService.addProduct1(this.productObj).subscribe((data) => {
         console.log(data);
         this.productForm.reset();
