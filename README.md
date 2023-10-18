@@ -30,10 +30,10 @@ I used (https://spring.academy and https://www.baeldung.com) courses to learn Sp
 
 
 ### Screenshots:
-* [Homepage](./src/assets/images/homepage.png)
-* [Product Details](./src/assets/images/productdetails.png)
-* [Register Product](./src/assets/images/registerproduct.png)
-* [Edit Product](./src/assets/images/editproduct.png)
+* (./src/assets/images/homepage.png)
+* (./src/assets/images/productdetails.png)
+* (./src/assets/images/registerproduct.png)
+* (./src/assets/images/editproduct.png)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
