@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../service/product.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
+import { Product } from '../model/product';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -15,7 +16,7 @@ export class ProductDetailsComponent implements OnInit {
   description =
     " Operating System: OxygenOS based on Android 11 CPU: Qualcomm® Snapdragon™ 870.. GPU: Adreno 650. RAM: 8GB/12GB";
   pcategory = "";
-  image:string="";
+  image: string = "";
   pid = 2;
   public productdata: any;
   isEditing!: boolean;
@@ -25,8 +26,8 @@ export class ProductDetailsComponent implements OnInit {
     private _productdetailsService: ProductService,
     private domSanitizer: DomSanitizer,
     private productService: ProductService,
-    private _route: ActivatedRoute
-  ) {}
+    private _route: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
     this.pid = this._route.snapshot.params['id'];
@@ -41,7 +42,7 @@ export class ProductDetailsComponent implements OnInit {
       this.pdatepost = this.productdata.pdatepost
       this.pcoin = this.productdata.pcoin
       this.description = this.productdata.description
-      this.image=this.productdata.image
+      this.image = this.productdata.image
 
     })
   }
@@ -49,6 +50,22 @@ export class ProductDetailsComponent implements OnInit {
   // Function to save the edited product.
 
   saveProduct() {
+    const updatedProduct: Product = {
+      pid: this.pid,
+      pname: this.pname,
+      pcategory: this.pcategory,
+      pdatepost: this.pdatepost,
+      description: this.description,
+      pcity: this.pcity,
+      pcoin: this.pcoin,
+      image: this.image
+    };
+
+    this.productService.updateProduct(updatedProduct).subscribe(data => {
+      console.log("updated product");
+      console.log(data);
+    });
+    
     this.isEditing = false;
   }
   editProduct() {
