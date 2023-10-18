@@ -8,8 +8,12 @@ import {error} from "@angular/compiler-cli/src/transformers/util";
   providedIn: 'root'
 })
 export class ProductService {
+  refreshProducts() {
+    throw new Error('Method not implemented.');
+  }
 
-  baseUrl = "https://ecom-backend-s4x8.onrender.com"
+  // baseUrl = "https://ecom-backend-s4x8.onrender.com"
+  baseUrl = "http://localhost:8080"
   
 
   constructor(private httpClient: HttpClient) { }
@@ -26,7 +30,7 @@ export class ProductService {
     return this.httpClient.get<Product[]>(this.baseUrl + "/all")
   }
 
-  updateProduct(product: Product) {
+  public updateProduct(product: Product) {
     return this.httpClient.put<Product>(this.baseUrl + "/update", product);
 
   }

@@ -15,10 +15,15 @@ body.homepage {
   background-repeat: no-repeat;
 }
 
-body {
+.background {
   background-image: url(https://img.freepik.com/free-photo/grunge-wall-texture_1194-5342.jpg?w=1800&t=st=1697646916~exp=1697647516~hmac=b87a85b42593843e9581f8a45aac07ce7e7866a7c1478ffc4e3a1e0ef2d4f437);
   background-repeat: no-repeat;
 }
+
+/* body {
+  background-image: url(https://img.freepik.com/free-photo/grunge-wall-texture_1194-5342.jpg?w=1800&t=st=1697646916~exp=1697647516~hmac=b87a85b42593843e9581f8a45aac07ce7e7866a7c1478ffc4e3a1e0ef2d4f437);
+  background-repeat: no-repeat;
+} */
 .mat-badge-content {
   font-weight: 600;
   font-size: 12px;

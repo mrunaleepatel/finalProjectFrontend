@@ -21,6 +21,7 @@ export class ProductDetailsComponent implements OnInit {
   public productdata: any;
   isEditing!: boolean;
   private router: any;
+  products: Product[] = [];
 
   constructor(
     private _productdetailsService: ProductService,
@@ -68,6 +69,17 @@ export class ProductDetailsComponent implements OnInit {
     
     this.isEditing = false;
   }
+
+  // updateProduct (){
+  //   this.productService.updateProduct(this.productdata).subscribe(data => {
+  //     this.productService.refreshProducts();
+  //   });
+  // }
+  // refreshProducts() {
+  //   this.productService.getAllProduct().subscribe(products => {
+  //     this.products = products;
+  //   })
+  // }
   editProduct() {
     this.isEditing = true;
   }
