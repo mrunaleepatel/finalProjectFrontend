@@ -32,14 +32,10 @@ I used (https://spring.academy and https://www.baeldung.com) courses to learn Sp
 
 
 ### Screenshots:
-* ![Homepage](<img width="1511" alt="Screenshot 2023-10-18 at 6 25 55 PM" src="https://github.com/mrunaleepatel/finalProjectFrontend/assets/130593688/cc540b9b-3f8b-4334-b87a-72f8e8d8c033">
-)
-* ![Product Details](<img width="1512" alt="Screenshot 2023-10-18 at 6 26 50 PM" src="https://github.com/mrunaleepatel/finalProjectFrontend/assets/130593688/4cb0059c-1c86-4ec8-8769-b9208f000ff7">
-)
-* ![Register Product](<img width="1512" alt="Screenshot 2023-10-18 at 6 26 19 PM" src="https://github.com/mrunaleepatel/finalProjectFrontend/assets/130593688/9f502405-dcb1-42a9-85f8-472748747361">
-)
-* ![Edit Product](<img width="1512" alt="Screenshot 2023-10-18 at 6 28 25 PM" src="https://github.com/mrunaleepatel/finalProjectFrontend/assets/130593688/d40b6baa-af3f-4a56-bc25-2b2a5391842d">
-)
+* ![Homepage](./src/assets/images/homepage.png)
+* ![Product Details](./src/assets/images/productdetails.png)
+* ![Register Product](./src/assets/images/registerproduct.png)
+* ![Edit Product](./src/assets/images/editproduct.png)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
