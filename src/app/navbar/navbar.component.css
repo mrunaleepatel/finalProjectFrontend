@@ -1,3 +1,19 @@
 .nav {
   background-color: #084048;
 }
+
+a.nav-link {
+  transition: border-bottom 0.75s ease;
+  text-decoration: none;
+}
+
+a.nav-link:hover {
+  border-bottom: 2px solid #b0eabb; 
+}
+
+.navbar-logo {
+  width: 210px; /* Adjust the width as needed to fit your navbar */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* To center the image horizontally within the list item */
+  margin: 0 auto; /* To center the image horizontally within the list item */
+}

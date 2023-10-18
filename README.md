@@ -1,5 +1,7 @@
 ## Project Name: BudgetBazaar
 
+![Logo](./src/assets/images/BudgetBazaarLogo.png)
+
 ### Description:
 BudgetBazaar is an online e-commerce platform that specializes in offering a wide range of affordable products and goods to budget-conscious shoppers.
 
