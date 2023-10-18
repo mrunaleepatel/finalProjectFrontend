@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailsComponent implements OnInit {
   pname = "One Plus 9r";
-  pcity = "Patna,Bihar";
+  pcity = "Schaumburg, Illinois";
   pdatepost = "";
   pcoin = 20000;
   description =
