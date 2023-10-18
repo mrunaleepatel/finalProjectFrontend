@@ -1,5 +1,8 @@
 
-<div class="content" style="margin-top: -3rem; cursor: pointer">
+<div class="content" style="margin-top: -3rem; cursor: pointer; padding-top: 780px;">
+  <div class="box">
+  <h1 style="text-align: center; color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; font-family: 'Courier New', Courier, monospace;">BudgetBazaar is an online e-commerce platform that specializes in offering a wide range of affordable products and goods to budget-conscious shoppers.</h1>
+  </div>
   <div fxLayout="row wrap" fxLayoutAlign="left" fxLayoutGap="2%">
     <mat-card (click)="goToProduct(a.pid)" class="example-card" *ngFor="let a of getproduct " fxFlex="23%" fxLayoutGap="2%" style="background-color: whitesmoke">
       <img mat-card-image [src]="a.image" style="padding-left: 10px; padding-right: 5px; padding-top: 10px; cursor: pointer">

@@ -22,8 +22,8 @@
 }
 .box {
   width: 260px;
-  min-height: 270px;
-  border: 1px solid rgb(9, 236, 236);
+  min-height: 200px;
+  border: 1px solid #084048;
   cursor: pointer;
 }
 .box:hover {
@@ -71,4 +71,15 @@
   margin-top: 5px;
   align-items: flex-start;
   margin-left: 5px;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity */
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -22%);
+  z-index: 2;
+  width: 50%;
 }

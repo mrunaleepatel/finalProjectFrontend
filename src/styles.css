@@ -9,11 +9,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?w=2000");
+  background-image: url("https://miro.medium.com/v2/resize:fit:1200/1*c-5f_vW-yiaJf386nOsTWQ.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-
 
 .mat-badge-content {
   font-weight: 600;
@@ -32,7 +32,8 @@ body {
 .mat-h1,.mat-headline,.mat-typography h1 {
   font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
   letter-spacing: normal;
-  margin: 0 0 16px
+  margin: 0 0 16px;
+  width: 100%;
 }
 
 .mat-h2,.mat-title,.mat-typography h2 {
