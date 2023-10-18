@@ -9,11 +9,12 @@ BudgetBazaar is an online e-commerce platform that specializes in offering a wid
 * HTML
 * JavaScript
 * Bootstrap
+* Netlify (deploy)
 
 ### Links:
-* [Backend Repo]()
-* [Frontend Repo]()
-* [Deployed App]()
+* [Backend Repo](https://github.com/mrunaleepatel/finalProjectBackend.git)
+* [Frontend Repo](https://github.com/mrunaleepatel/finalProjectFrontend.git)
+* [Deployed App](https://main--fascinating-pika-3500f2.netlify.app)
 
 ### Features:
 * Show a list of products
@@ -27,13 +28,12 @@ BudgetBazaar is an online e-commerce platform that specializes in offering a wid
 ### Learning tool:
 I used (https://spring.academy and https://www.baeldung.com) courses to learn Spring Boot, Spring Security, Spring Data JPA, MySQL and for Angular I used (https://angular-university.io/home).
 
-### Mockups:
-* [Desktop View]()
 
 ### Screenshots:
-* [Homepage]()
-* [Product Details]()
-* [Register Product]()
+* [Homepage](./src/assets/images/homepage.png)
+* [Product Details](./src/assets/images/productdetails.png)
+* [Register Product](./src/assets/images/registerproduct.png)
+* [Edit Product](./src/assets/images/editproduct.png)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.

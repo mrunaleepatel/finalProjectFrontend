@@ -7,6 +7,7 @@ h1 {
   font-size: 3rem;
   margin-top: 1rem;
   font-family: Skia, sans-serif;
+  line-height: 50px;
 }
 
 h3 {
