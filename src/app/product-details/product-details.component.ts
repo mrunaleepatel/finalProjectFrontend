@@ -9,6 +9,7 @@ import { Product } from '../model/product';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
+
   pname = "One Plus 9r";
   pcity = "Schaumburg, Illinois";
   pdatepost = "";
@@ -50,45 +51,19 @@ export class ProductDetailsComponent implements OnInit {
 
   // Function to save the edited product.
 
-  saveProduct() {
-    const updatedProduct: Product = {
-      pid: this.pid,
-      pname: this.pname,
-      pcategory: this.pcategory,
-      pdatepost: this.pdatepost,
-      description: this.description,
-      pcity: this.pcity,
-      pcoin: this.pcoin,
-      image: this.image
-    };
-
-    this.productService.updateProduct(updatedProduct).subscribe(data => {
-      console.log("updated product");
-      console.log(data);
-    });
-    
+  saveProduct(){
     this.isEditing = false;
   }
 
-  // updateProduct (){
-  //   this.productService.updateProduct(this.productdata).subscribe(data => {
-  //     this.productService.refreshProducts();
-  //   });
-  // }
-  // refreshProducts() {
-  //   this.productService.getAllProduct().subscribe(products => {
-  //     this.products = products;
-  //   })
-  // }
   editProduct() {
     this.isEditing = true;
   }
+  
   deleteProduct() {
-    if (confirm('Are you sure you want to delete this product?')) {
-      this.productService.deleteProduct(this.pid).subscribe(() => {
-        this.router.navigate(['/']);
-      });
-    }
+    this.productService.deleteProduct(this.pid).subscribe((res: any) => {
+  console.log('Product deleted successfully!');
+
+  });
   }
 }
 

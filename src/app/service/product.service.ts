@@ -1,19 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from '../model/product';
-import {catchError, pipe, throwError} from "rxjs";
+import {catchError, pipe, tap, throwError} from "rxjs";
 import {error} from "@angular/compiler-cli/src/transformers/util";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+  
+  http: any;
+  products: unknown;
   refreshProducts() {
     throw new Error('Method not implemented.');
   }
 
-  // baseUrl = "https://ecom-backend-s4x8.onrender.com"
-  baseUrl = "http://localhost:8080"
+  baseUrl = "https://ecom-backend-s4x8.onrender.com"
+  // baseUrl = "http://localhost:8080"
   
 
   constructor(private httpClient: HttpClient) { }
@@ -30,9 +33,8 @@ export class ProductService {
     return this.httpClient.get<Product[]>(this.baseUrl + "/all")
   }
 
-  public updateProduct(product: Product) {
-    return this.httpClient.put<Product>(this.baseUrl + "/update", product);
-
+  public updateProduct(pid:any){
+    return this.httpClient.put<Product>(this.baseUrl + "/update/"+ pid, this.products)
   }
 
   public deleteProduct(pid: any) {
